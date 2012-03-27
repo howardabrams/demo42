@@ -1,5 +1,11 @@
 Displays three values _graphically_ from a Redis database on a web client.
 
+We display the values using Google's [Gauges][3] widget, and refresh this
+information every couple of seconds. The idea is that you would have a browser
+viewing the output results, and then use a second browser to submit REST
+requests to change the data.
+
+
 Installing
 ----------
 
@@ -39,3 +45,6 @@ You can change the values in the database, by issuing the following REST calls:
        "messages":77
      }
 
+  [1]: http://nodejs.org/
+  [2]: 
+  [3]: http://code.google.com/apis/chart/interactive/docs/gallery/gauge.html
