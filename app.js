@@ -33,8 +33,8 @@ app.configure('production', function(){
 
 app.get('/',        routes.index);
 app.get('/levels',  routes.cpm);
-
 app.post('/levels',   model.setall);
+
 app.get('/producers/:value', model.producers);
 app.get('/consumers/:value', model.consumers);
 app.get('/messages/:value',  model.messages);
