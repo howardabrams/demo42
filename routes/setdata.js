@@ -1,9 +1,6 @@
-var redis = require("redis"),
-    client = redis.createClient();
+var redis  = require("redis"),
+    client = require('../services/connRedis').client;
 
-client.on("error", function (err) {
-    console.warn("Error " + err);
-});
 
 exports.setall = function ( request, response ) {
     console.log("Storing", request.body);

@@ -1,13 +1,5 @@
-var redis = require("redis"),
-    client = redis.createClient();
-
-/**
- * If we can't initially connect to the Redis database, let the user know...
- * in the most unobtrusive way possible. 
- */
-client.on("error", function (err) {
-    console.warn("Error " + err);
-});
+var util   = require('util');
+var client = require('./connRedis').client;
 
 /**
  * Query the database for each of the three values. We do this one at a time
@@ -22,6 +14,9 @@ exports.getdata = function(callback) {
         consumers: 0,
         messages: 0
     };
+    
+    // console.log("client", util.inspect(client));
+    
     client.get("producers", function(err, reply) {
         if (err) {
             console.warn("Producers Error", err);
