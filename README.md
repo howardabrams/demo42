@@ -9,7 +9,11 @@ requests to change the data.
 Installing
 ----------
 
-Make sure you have [Node][1] and [Redis][2] installed locally.
+Make sure you have the following engines installed locally:
+
+  * [Node][1]
+  * [NPM][4] ... Node.js' package manager
+  * [Redis][2]
 
 Next, download the code and run the following to download the dependencies:
 
@@ -40,11 +44,12 @@ You can change the values in the database, by issuing the following REST calls:
  * `GET /messages/#` - where `#` is the absolute number of messages
  * `POST /levels` - where the body contains all three values, e.g.
  
-     { "producers":6,
-       "consumers":5,
-       "messages":77
-     }
+    { "producers":6,
+      "consumers":5,
+      "messages":77
+    }
 
   [1]: http://nodejs.org/
-  [2]: 
+  [2]: http://redis.io/
   [3]: http://code.google.com/apis/chart/interactive/docs/gallery/gauge.html
+  [4]: http://npmjs.org/
