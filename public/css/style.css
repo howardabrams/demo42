@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding-top: 50px;
   background-color: #ddd;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -18,12 +18,11 @@ h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 410px;
+  width: 90%;
 }
 
 #charts {
-  width: 360px;
-  height: 120px;
+  height: 300px;
   text-align: center;
   border: 1px solid #aaa;
   background-color: white;

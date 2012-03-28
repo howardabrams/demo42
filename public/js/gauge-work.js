@@ -25,8 +25,8 @@ var gunk = {
             yellowTo   : 8,
             redFrom    : 8,
             redTo      : 10,
-            width      : 120,
-            height     : 120
+            width      : 300,
+            height     : 300
         }
     },
     producers : {
@@ -39,8 +39,8 @@ var gunk = {
             yellowTo   : 8,
             redFrom    : 8,
             redTo      : 10,
-            width      : 120,
-            height     : 120
+            width      : 300,
+            height     : 300
         }
     },
     messages : {
@@ -52,8 +52,8 @@ var gunk = {
             yellowTo   : 90,
             redFrom    : 90,
             redTo      : 100,
-            width      : 120,
-            height     : 120
+            width      : 300,
+            height     : 300
         }
     }
 };
